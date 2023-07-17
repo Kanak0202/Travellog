@@ -1,0 +1,791 @@
+body{
+  overflow-x: hidden;
+}
+
+/* Nav Bar */
+
+.navContainer{
+  width:100%;
+  display: flex;
+  background-color: rgb(38, 36, 52);
+  color:white;
+  max-height: 60px;
+}
+
+.navContainer p{
+  padding-top:9px;
+  padding-left: 25px;
+  font-size: 22px;
+}
+
+.nav-ul{
+  display:flex;
+  list-style: none;
+  padding-top: 12px;;
+}
+
+.navLink{
+  text-decoration: none;
+  padding:0 15px;
+  color:white;
+}
+
+.navLink:visited{
+  color:white;
+}
+
+/* Home Page */
+
+.head-section{
+  height:650px;
+  width:1400px;
+  position: relative;
+}
+
+.head-image{
+  height:650px;
+  width:1530px;
+}
+
+.travellog{
+  position: absolute;
+  z-index: 1;
+  top: 125px;
+    left: 80px;
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.conn-trav{
+  position: absolute;
+  top:265px;
+  left:105px;
+  letter-spacing: 8px;
+}
+
+.head-section-btn{
+  position: absolute;
+  top:353px;
+  left:99px;
+  width:10%;
+  height:35px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.head-section-btn:hover{
+  background-color: rgb(52, 52, 52);
+}
+
+
+
+.HeadSectionImage{
+  height:300px;
+  width:60%;
+  margin:5px 70px;
+}
+
+/* .ConnectingTravellers{
+  width:90%;
+  margin:5px auto;
+  height:600px;
+  border: 2px solid black;
+} */
+
+.carousel{
+  height:500px;
+  width:75%;
+  margin:5px auto;
+}
+
+.Review-carousel{
+  background-color: pink;
+  width:75%;
+  margin:5px auto;
+}
+
+.top-picks{
+  /* background-color: rgb(255, 146, 166); */
+  background-color: black;
+}
+
+.top-picks-container{
+  display: grid;
+  /* margin-top: 100px; */
+  padding:80px 0;
+  color: white;
+}
+.top-picks-container h1{
+  margin: 20px auto;
+  font-size: 70px;
+}
+
+.picks-hr{
+  border: 2px solid white;
+  margin:20px auto;
+  margin-top: 5px;
+  width: 100px;
+}
+
+.card-container{
+  display: flex;
+  margin: 20px 100px;
+}
+
+.card{
+  border: 0.5px solid rgb(255, 255, 255);
+  padding: 25px;
+  height:500px;
+  border-radius: 0;
+  /* background-color: black; */
+  color: black;
+  margin: 0 30px;
+}
+
+.card h3{
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+/* Review section */
+
+.review-heading{
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  padding: 50px 0;
+  padding-bottom: 25px;
+}
+
+.review-carousel{
+  background-color: rgb(226, 115, 134);
+  color:white
+
+}
+
+.review-section{
+  background-color: black;
+  padding:100px 0;
+}
+
+
+.reviewer-image{
+  margin:auto;
+  height:100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.reviwer-info{
+  /* display: flex; */
+  margin: auto;
+  width:30%;
+}
+
+.reviwer-name{
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.review-content{
+  font-size: 70px;
+  font-weight: 500;
+  padding:50px 50px;
+  margin-bottom: 20px;
+}
+
+
+
+.carousel-item{
+  text-align: center;
+}
+
+
+/* Footer */
+
+.Footer{
+  width:100%;
+  background-color: rgb(38, 36, 52);
+  color:white;
+  text-align: center;
+  padding: 20px;
+  /* margin-top: 60px; */
+}
+
+.Footer h3{
+  font-size: 35px;
+}
+
+.Logo{
+  height:50px;
+  width:100px;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.LoginComponent{
+  display:grid;
+  width:50%;
+  margin: auto;
+  padding: 10px 0;
+}
+.SignupComponent{
+  display:grid;
+  width:50%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.inputBox{
+  margin-top: 5px;
+  height:30px;
+  font-size: 16px;
+  padding: 15px 10px;
+  border:1px solid rgb(164, 164, 164);
+  box-shadow: 0 0 1px 1px #e5e3e3;
+}
+
+.input-box{
+  margin-top: 15px; 
+}
+
+/* Button */
+
+.btn{
+  width:20%;
+  margin:10px auto;
+  border: 2px solid black;
+  background-color: rgba(45, 43, 62, 0.951);
+  color:white;
+}
+
+.btn:hover{
+  background-color: rgb(0, 0, 0);
+  color:white;
+}
+
+.btn-my-upload{
+  width:100px;
+}
+
+.btn-my-upload{
+  color: rgba(26, 25, 37, 0.921);
+  background-color: white;
+}
+.btn-my-upload:hover{
+  color: rgba(26, 25, 37, 0.921);
+  background-color: white;
+}
+
+/* View Destination */
+
+.view-destination-body{
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.ViewDestination-Container{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 2%;
+}
+
+.dest-frame{
+  height:200px;
+  width:400px;
+  max-width: 400px;
+  border:1px solid rgb(235, 233, 233);
+  padding:20px;
+  margin-left:50px;
+  margin-top: 30px;
+  position:relative;
+  background-color: black;
+  box-shadow: 0 0 0.5px 1px #eeebeb;
+  border-radius: 5px;
+}
+
+.dest-frame:hover{
+    box-shadow: 0 0 1px 2px #e3dfdf;
+  cursor: pointer;
+
+}
+
+.dest-frame h1{
+  /* font-size: 60px; */
+  width:350px;
+  font-size: max(2vw, 50px);
+  text-align: center;
+  letter-spacing: 7px;
+  position:absolute;
+  text-align: center;
+  top:60px;
+  color:white;
+}
+
+.dest-image{
+  height:200px;
+  width:400px;
+  margin:0px;
+  position: absolute;
+  top:0px;
+  left:0px;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.dest-image:hover{
+  opacity: 0.75;
+}
+
+/* Add Destination */
+
+.add-dest-main-container{
+  display: flex;
+  background-color: #f0faff;
+}
+
+.add-title{
+  margin-bottom:-0.5rem;
+  padding-left: 9px;
+  font-size: 30px;
+}
+
+.AddDestination-Container{
+  display:grid;
+  width:40%;
+  margin-left: 100px;
+  margin-top: 30px;
+  padding: 10px 0;
+  background-color: #f0faff;
+  /* padding: 20px; */
+}
+
+.add-main-form-body{
+  display: grid;
+  border: 0.5px solid rgb(205, 205, 205);
+  border-radius: 2%;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.811);
+  margin-bottom: 50px;
+}
+
+.add-dest-label{
+  margin-top:20px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn-add{
+  margin-top: 20px;
+}
+
+
+.add-dest-right-container{
+  height:1000px;
+  width:750px;
+  margin-left: 0px;
+  position: relative;
+  /* background-color: #dce6fc; */
+}
+
+.vert{
+  height:280px;
+  width:200px;
+}
+
+.horz{
+  height:180px;
+  width: 280px;
+}
+
+.adp1{
+  position: absolute;
+  top:120px;
+  left:245px;
+  z-index:3;
+}
+.adp2{
+  position: absolute;
+  z-index: 2;
+  top:300px;
+  left:80px;
+  padding: 10px 0 10px 10px;
+  background-color: #637A87;
+}
+.adp3{
+  position: absolute;
+  z-index: 4;
+  top:334px;
+  left:343px;
+}
+.adp4{
+  position: absolute;
+  z-index: 1;
+  top:188px;
+  left:443px;
+  padding: 10px 10px 10px 0px;
+  background-color: #637A87;
+}
+
+.horz-div{
+  background-color: #637A87;
+}
+
+.Map{
+  font-size: 90px;
+  font-weight: 400;
+}
+.the{
+  font-size: 13px;
+  margin-left: 0px;
+}
+.Map-the{
+  position: absolute;
+  z-index: 5;
+  top:84px;
+  left:111px;
+}
+.world{
+  position: absolute;
+  z-index: 5;
+  letter-spacing: 7px;
+    top: 176px;
+    left: 117px;
+    font-size: 25px;
+}
+
+.together{
+  position: absolute;
+  z-index: 5;
+  letter-spacing: 7px;
+  top: 378px;
+    left: 564px;
+    font-size: 35px;
+}
+
+.dot{
+  height: 6px;
+  width: 256px;
+  background-color: #b6c0c6;
+  border-radius: 50%;
+  position: absolute;
+  top: 659px;
+  left: 314px;
+  box-shadow: 0 0 1px 2px rgb(233, 232, 232);
+}
+
+/* Profile */
+
+.profile-overall{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.profile-component{
+  margin:100px auto;
+  width:30%;
+  text-align: center;
+  display: flex;
+  margin-bottom: 140px;
+}
+
+.profile-overall-heading{
+  font-size: 75px;
+}
+
+.profile-data{
+  text-align: left;
+  width:100%;
+  margin-left: 100px;
+}
+
+.location-main-heading{
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.location-card-container{
+  display:flex;
+  flex-wrap: wrap;
+  margin:30px;
+}
+
+.location-card{
+  border:2px solid black;
+  width: 400px;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgba(26, 25, 37, 0.923);
+  color: white;
+}
+
+.location-card:hover{
+  outline: 2.5px solid rgb(78, 175, 223);
+}
+
+.TravellogLogo:hover{
+  cursor: pointer;
+}
+
+/* Dropdown */
+
+.dropdown{
+  position: absolute;
+  z-index:1;
+  background-color: #000000b8;
+  width:150px;
+  padding: 0;
+  right:30px;
+  top:50px;
+  border-radius: 2px;
+  box-shadow: 0 0 0.5px 0.5px #9f9e9e85;
+  border: 1px solid white;
+    border-radius: 5%; 
+}
+
+.dropdown ul{
+  color:white;
+  list-style: none;
+  margin: 0px;
+    padding: 5px 2px;
+    
+}
+
+.dropdown-button{
+  background-color: rgba(146, 143, 150, 0.233);
+  color:white;
+  border-radius: 50%;
+  height:35px;
+  width:35px;
+  border: none;
+  box-shadow: 0 0 0.8px 1px #9f9e9e85; 
+  margin-left:820px;
+}
+
+.dropdown-button:hover{
+  background-color: rgba(10, 9, 10, 0.785);
+  box-shadow: 0 0 1px 2px #9f9e9e85; 
+  height:36px;
+  width:36px;
+}
+
+.dropdown ul hr{
+  color:white;
+  margin:0;
+}
+
+.dropdown ul li{
+  padding: 10px 0;
+  background-color: #131313a0;
+}
+.dropdown ul li:hover{
+  background-color: #131313;
+}
+
+/* scs */
+
+.location-card-container-uploads{
+  display: flex;
+}
+
+.btn-my-upload-delete{
+  margin-left: 10px;
+}
+
+.location-card{
+  /* cursor: pointer; */
+}
+
+/* Read review */
+
+.review-card{
+  width: 75%;
+  margin:50px auto;
+  border: 2px solid black;
+  padding: 25px 50px;
+  background-color: rgba(26, 25, 37, 0.921);
+  color: white;
+}
+
+.review-card h1{
+  font-size: 80px;
+}
+
+.review-card-username{
+  text-align: right;
+}
+
+.comment-input{
+  background-color: rgba(48, 45, 67, 0.775);
+  border: none;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.216);
+  color:white;
+  width:100%;
+}
+
+.comment-input:focus{
+  outline:none;
+}
+
+
+.required{
+  color:red;
+  margin-top:10px;
+}
+
+.review-input{
+  margin-top:20px;
+}
+
+.view-dest-input{
+  width:30%;
+  margin-left: 483px;
+}
+
+.search-box-container p{
+  margin-left: 483px;
+}
+
+.sender-image{
+  border-radius: 100%;
+  height:50px;
+  width:50px;
+}
+
+.setting-img{
+  height:10px;
+  width:10px;
+}
+
+.comment-container{
+  position: relative;
+}
+
+.hide{
+  margin-left:950px;
+  /* position: relative; */
+}
+
+.setting-btns{
+  display: block;
+  position:absolute;
+  z-index:1;
+  right: 0;
+  top:40px;
+}
+
+.setting-ul{
+  /* width:150px; */
+  border: 0.5px solid white;
+}
+.setting-li{
+  list-style: none;
+}
+.setting-li{
+  background-color: #2e3440;
+  cursor: pointer;
+}
+
+/* .hide{
+  display: none;
+}
+
+.comment-container:hover + .hide{
+  display: block;
+} */
+
+.add-comment-buttons{
+  /* display: flex; */
+  width:fit-content;
+  margin-left: 830px;
+}
+
+.btn-read-cancel{
+  /* background-color: rgba(26, 25, 37, 0.921); */
+  border: none;
+  color:#eeebeb;
+  width:100px;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.btn-read-comment{
+  width:100px;
+  border-radius: 20px;
+  background-color: rgb(18, 177, 245);
+  color: rgba(0, 0, 0, 0.921);
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.btn-read-comment:hover{
+  background-color: rgb(59, 188, 244);
+  color:black;
+}
+
+.login-form{
+  margin:20px auto;
+  margin-bottom: 50px;
+  display: grid;
+  width:50%;
+  border:0.5px solid rgb(163, 163, 163);
+  border-radius: 5%;
+  padding: 20px;
+}
+
+.LoginComponent h1{
+  margin:50px 0 10px 190px;
+}
+
+/* View DEstination */
+
+.view-dest-main-section{
+  width:100%;
+  position: relative;
+  background-color: black;
+}
+
+.view-dest-head-image{
+  width:100%;
+  /* position: relative; */
+  z-index: -1;
+  opacity: 0.8;
+  /* border-bottom: 5px solid rgb(188, 242, 231); */
+}
+
+.search-box-container-main{
+  margin:2%;
+  margin-bottom: 0;
+  display: block;
+  height:53px;
+  position: absolute;
+  z-index: 1;
+  top:65px;
+  left:536px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.search-para{
+  color:white;
+  position: absolute;
+  top:148px;
+  left:84px;
+  z-index: 1;
+}
+

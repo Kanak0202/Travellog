@@ -1,0 +1,105 @@
+const express = require("express");
+const mongoose = require("mongoose");
+const User = require("./db/User");
+require('./db/config');
+const cors = require("cors");
+const Destination = require("./db/Destination");
+const multer  = require('multer');
+const fs = require('fs');
+const { log } = require("console");
+
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+
+app.post("/signup", async(req,res)=>{
+    let user = new User(req.body);
+    let result = await user.save();
+    if(result){
+        res.send(result);
+    }
+    else{
+        res.send({result:"User not created"});
+    }
+});
+
+app.post("/login", async(req, res)=>{
+    if(req.body.email && req.body.password){
+        let user = await User.findOne(req.body).select("-password");
+        if(user){
+            res.send(user);
+        }
+        else{
+            res.send({result:"User not found"});
+        }
+    }
+    else{
+        res.send({result:"Data not obtained"});
+    }
+    
+});
+
+//storage engine
+const storage = multer.diskStorage({
+    destination:(req, file, cb)=>{
+        cb(null, 'images')
+    },
+    filename: (req, file, cb)=> {
+        cb(null, file.originalname)
+      }
+})
+//configure 
+const upload = multer({storage:storage});
+
+// app.post('/uploadImage',,(req,res)=>{
+//     const saveImage = new Destination({
+//         img: 
+//     })
+// })
+
+
+app.post("/add",upload.single('testImage'), async(req, res)=>{
+    const saveImage = new Destination({
+        name: req.body.name,
+        state: req.body.state, 
+        city: req.body.city,
+        img:{
+            data: fs.readFileSync('./images/' + req.file.filename),
+            ContentType:"image" 
+        },
+        attractions: req.body.attractions, 
+        description: req.body.description, 
+        days: req.body.days, 
+        budget: req.body.budget, 
+        userId: req.body.userId, 
+    });
+    saveImage.save().then((res)=>{console.log("image is saved")})
+    .catch((err)=>{console.log(err, "error has occured")});
+    res.send("image is saved");
+    
+    // let destination = new Destination(req.body);
+    // let result = await destination.save();
+    // if(result){
+    //     res.send(result);
+    // }
+    // else{
+    //     res.send({result:"Destination not added"});
+    // }
+    
+});
+
+app.get("/view", async(req, res)=>{
+    let result = await Destination.find({},'name').distinct('name');
+    if(result){
+        res.send(result);
+    }
+    else{
+        res.send({result:"Destination names cannot be retrieved"});
+    }
+});
+
+
+const port = 5000;
+
+app.listen(port, console.log("Server started at port 5000"));
